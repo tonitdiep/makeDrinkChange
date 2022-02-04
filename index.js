@@ -25,3 +25,16 @@ From the fifth customer, we give a $10 bill and a $5 bill.
 Since all customers got correct change, we output true.
 
  */
+
+/*
+leamonade stand $5. each customer will only buy 1 one
+customer can only pay these denominations: $5, $10, $20
+how to provide correct change?
+    -provide correct change per customer 
+    -net transaction are customers paying $5
+    -initially no change at hang
+'bills'-integer array 
+bills[i] is the bill ith customers pays
+return true if you can provide every customer w/ the correct change 
+    otherwise return false if not correct change can be provided to customer
+*/
