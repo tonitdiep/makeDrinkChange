@@ -3,7 +3,33 @@
  * @param {number[]} bills
  * @return {boolean}
  */
-var lemonadeChange = function(bills) {
+var lemonadeChange = function(bills = [5,5,5,10,20]) {
+
+         let fives = 0,
+        tens = 0;
+    for (bill of bills){
+ 
+        if (bill == 5){
+             
+            fives++;
+        } else if (bill == 10){
+   
+            fives--;
+            tens++;
+
+        } else if (tens > 0){
+            fives--;
+            tens--;
+       
+        } else {
+   
+            fives -= 3;
+          
+        }
+         if (fives < 0 || tens < 0 ) return false;
+    }
+    
+    return true
 
 }
 
